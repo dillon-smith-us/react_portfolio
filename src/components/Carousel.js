@@ -1,10 +1,12 @@
 import React from 'react';
 
 
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Card from '../components/Card'
-// image size: 1000pxwidthx1600pxheight
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import Card from '../components/Card';
+// image size: 1000pxwidthx1600pxheight por favor
 import poggers from '../assets/images/poggers.png';
 import snaccident from '../assets/images/snaccident.png';
 import notetaker from '../assets/images/notetaker.png';
@@ -65,19 +67,19 @@ class Carousel extends React.Component {
 
         makeItems = (items) => {
             return items.map(item => {
-                return <Card item={item} onClick={(e => this.handleCardClick(item.id, e))} key={item.id} />
+                return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
             })
         } 
 
     render() {
         return(
-            <Container fluid={true}>
-                <Row className="justify-content-around">
-                    {this.makeItems(this.state.items)}
+            <Container fluid="md">
+                <Row className="justify-content-around"> 
+                   <Col className="justify-content-around"> {this.makeItems(this.state.items)}</Col>
                 </Row>
 
             </Container>
-        )
+        );
     }
 
 }

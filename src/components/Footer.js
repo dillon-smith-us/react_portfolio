@@ -12,7 +12,7 @@ function Footer() {
                     <Col className="p-0" md={3} sm={12}>
                         Dillon Smith
                     </Col>
-                    <Col classname="p-0 d-flex justify-content-end" md={3}>
+                    <Col classname="p-0 d-flex justify-content-end" md={1}>
                         Brought to you by Dillon Smith
                     </Col>
                 </Row>
