@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import logo from '../assets/images/logo.svg';
 
 function Footer() {
 
@@ -13,7 +14,7 @@ function Footer() {
                         Dillon Smith
                     </Col>
                     <Col className="p-0 d-flex justify-content-end" md={1}>
-                        Brought to you by Dillon Smith
+                        <img class="logo-style" src={logo} alt="logo"/>
                     </Col>
                 </Row>
             </Container>
